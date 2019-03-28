@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Load and Store CSV Data";
+}
+
+<form method="post" enctype="multipart/form-data" asp-controller="Home" asp-action="Post">
+    <div class="form-group">
+        <h3>@ViewData["Title"]</h3>
+    </div>
+    <div class="form-group">
+        <div class="col-md-10">
+            <p>Upload one or more CSV files:</p>
+            <input type="file" name="files" multiple />
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-md-10">
+            <input type="submit" value="Upload" />
+        </div>
+    </div>
+</form>
